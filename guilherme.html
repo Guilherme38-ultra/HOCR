@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PROJETO VIAGEM | LUGARES DOS SONHOS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap%22 rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f425c0", /* Rosa Neon Original */
+                        "accent-gold": "#ffd700",
+                        "background-light": "#f8f5f8",
+                        "background-dark": "#22101e",
+                        "card-bg": "#34182d",
+                        "border-muted": "#49223f"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .hero-glow {
+            text-shadow: 0 0 25px rgba(244, 37, 192, 0.5);
+        }
+        .bg-geometric {
+            background-color: #22101e;
+            background-image: radial-gradient(#f425c0 0.5px, transparent 0.5px);
+            background-size: 15px 15px;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-100 antialiased overflow-x-hidden" id="topo">
+<div class="relative flex min-h-screen w-full flex-col">
+ 
+<header class="fixed top-0 z-50 w-full flex items-center justify-between whitespace-nowrap border-b border-solid border-border-muted px-6 md:px-20 py-4 bg-background-dark/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between w-full">
+        <div class="flex items-center gap-4 text-primary">
+            <div class="size-8">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <h2 class="text-slate-100 text-xl md:text-2xl font-bold leading-tight tracking-tight uppercase">Projeto Viagem</h2>
+        </div>
+        <div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+            <nav class="flex items-center gap-8">
+                <a class="text-slate-100 hover:text-primary transition-colors text-sm font-medium tracking-widest uppercase" href="#sobre">O Projeto</a>
+                <a class="text-slate-100 hover:text-primary transition-colors text-sm font-medium tracking-widest uppercase" href="#destinos">Destinos</a>
+            </nav>
+        </div>
+    </div>
+</header>
+ 
+<main class="relative flex flex-col items-center justify-center min-h-[80vh] pt-20 overflow-hidden bg-geometric" id="sobre">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background-dark/80 to-background-dark z-10"></div>
+        <img alt="Luzes da cidade à noite" class="w-full h-full object-cover opacity-30" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop"/>
+    </div>
+ 
+    <div class="relative z-30 flex flex-col items-center text-center px-6 max-w-4xl mt-10">
+        <span class="text-primary font-bold tracking-[0.4em] text-sm uppercase mb-6 block">Turma 2º Ano G</span>
+        <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter hero-glow uppercase mb-6">
+            Lugares dos <br> Nossos Sonhos
+        </h1>
+        <p class="text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed font-light mb-10">
+            Somos 5 alunos de Tecnologia da Informação compartilhando nossos maiores objetivos pelo mundo. Explore cada destino e descubra por que sonhamos em conhecer essas culturas, tecnologias e paisagens.
+        </p>
+        <button onclick="document.getElementById('destinos').scrollIntoView({behavior: 'smooth'})" class="flex min-w-[240px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(244,37,192,0.4)]">
+            EXPLORAR DESTINOS
+        </button>
+    </div>
+</main>
+ 
+<section class="relative z-30 w-full max-w-7xl mx-auto px-6 py-24" id="destinos">
+    <div class="flex items-center justify-center gap-4 mb-16">
+        <div class="h-px w-16 bg-primary/50"></div>
+        <h2 class="text-white text-2xl md:text-3xl font-bold tracking-[0.2em] uppercase text-center">
+            Nossa Equipe
+        </h2>
+        <div class="h-px w-16 bg-primary/50"></div>
+    </div>
+ 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       
+        <a href="isabelly.html" class="group relative overflow-hidden rounded-2xl border border-border-muted bg-card-bg h-96 transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(244,37,192,0.3)]">
+            <div class="absolute inset-0 z-0">
+               
+                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Suíça">
+               
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 flex h-full flex-col justify-end p-8">
+                <div class="mb-3">
+                    <span class="rounded bg-primary/20 backdrop-blur-md px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30">
+                        Isabelly
+                    </span>
+                </div>
+                <h3 class="mb-2 text-4xl font-black text-white tracking-tight uppercase">Suíça</h3>
+                <p class="text-slate-300 text-sm mb-6 line-clamp-2">Polo global de inovação digital, precisão técnica e paisagens alpinas inspiradoras.</p>
+                <div class="flex items-center text-primary text-sm font-bold tracking-widest uppercase">
+                    Visitar Página <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+                </div>
+            </div>
+        </a>
+ 
+        <a href="davi.html" class="group relative overflow-hidden rounded-2xl border border-border-muted bg-card-bg h-96 transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(244,37,192,0.3)]">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Tóquio, Japão">
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 flex h-full flex-col justify-end p-8">
+                <div class="mb-3">
+                    <span class="rounded bg-primary/20 backdrop-blur-md px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30">
+                        Davi
+                    </span>
+                </div>
+                <h3 class="mb-2 text-4xl font-black text-white tracking-tight uppercase">Japão</h3>
+                <p class="text-slate-300 text-sm mb-6 line-clamp-2">Fascinado pelo contraste vibrante entre a vida noturna futurista e a modernidade tecnológica.</p>
+                <div class="flex items-center text-primary text-sm font-bold tracking-widest uppercase">
+                    Visitar Página <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+                </div>
+            </div>
+        </a>
+ 
+        <a href="rahquel.html" class="group relative overflow-hidden rounded-2xl border border-border-muted bg-card-bg h-96 transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(244,37,192,0.3)]">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Quioto, Japão">
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 flex h-full flex-col justify-end p-8">
+                <div class="mb-3">
+                    <span class="rounded bg-primary/20 backdrop-blur-md px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30">
+                        Rahquel
+                    </span>
+                </div>
+                <h3 class="mb-2 text-4xl font-black text-white tracking-tight uppercase">Japão</h3>
+                <p class="text-slate-300 text-sm mb-6 line-clamp-2">A beleza da arquitetura clássica dos templos envolta pela harmonia da natureza e inovação.</p>
+                <div class="flex items-center text-primary text-sm font-bold tracking-widest uppercase">
+                    Visitar Página <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+                </div>
+            </div>
+        </a>
+ 
+        <a href="matheus.html" class="group relative overflow-hidden rounded-2xl border border-border-muted bg-card-bg h-96 transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(244,37,192,0.3)]">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Akihabara, Japão">
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 flex h-full flex-col justify-end p-8">
+                <div class="mb-3">
+                    <span class="rounded bg-primary/20 backdrop-blur-md px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30">
+                        Matheus
+                    </span>
+                </div>
+                <h3 class="mb-2 text-4xl font-black text-white tracking-tight uppercase">Japão</h3>
+                <p class="text-slate-300 text-sm mb-6 line-clamp-2">O verdadeiro paraíso da cultura pop, hardware eletrônico, software e videogames.</p>
+                <div class="flex items-center text-primary text-sm font-bold tracking-widest uppercase">
+                    Visitar Página <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+                </div>
+            </div>
+        </a>
+ 
+        <a href="guilherme.html" class="group relative overflow-hidden rounded-2xl border border-border-muted bg-card-bg h-96 transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(244,37,192,0.3)]">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Monte Fuji e Pagode">
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 flex h-full flex-col justify-end p-8">
+                <div class="mb-3">
+                    <span class="rounded bg-primary/20 backdrop-blur-md px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30">
+                        Guilherme
+                    </span>
+                </div>
+                <h3 class="mb-2 text-4xl font-black text-white tracking-tight uppercase">Japão</h3>
+                <p class="text-slate-300 text-sm mb-6 line-clamp-2">Foco na engenharia de ponta, infraestrutura dos trens-bala e paisagens únicas.</p>
+                <div class="flex items-center text-primary text-sm font-bold tracking-widest uppercase">
+                    Visitar Página <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+                </div>
+            </div>
+        </a>
+ 
+    </div>
+</section>
+ 
+<footer class="relative z-30 w-full border-t border-primary/10 bg-[#160a13] py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="flex items-center gap-3">
+            <div class="text-primary/60">
+                <svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <span class="text-lg font-bold tracking-tighter text-slate-400 uppercase">Hub de Viagens</span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+            <span class="text-slate-500 text-sm">Trabalho de HTML/CSS</span>
+            <span class="text-slate-500 text-sm">Turma 2º Ano G</span>
+        </div>
+        <p class="text-slate-600 text-xs">© 2026 TRABALHO ESCOLAR. TODOS OS DIREITOS RESERVADOS.</p>
+    </div>
+</footer>
+ 
+</div>
+</body>
+</html>
+ 
